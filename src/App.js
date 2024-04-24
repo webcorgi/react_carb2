@@ -13,6 +13,8 @@ import Login from 'pages/Login';
 import RequestDetail from 'pages/RequestDetail';
 import Proceeding from 'pages/Proceeding';
 import Receiving from 'pages/Receiving';
+import ReceivingInput from 'pages/ReceivingInput';
+import ReceivingPopup from 'pages/ReceivingPopup';
 
 function App() {
 
@@ -41,6 +43,12 @@ function App() {
 
           {/* 04-A. 입고/검수 */}
           <Route path="/receiving" element={<Receiving />} />
+
+          {/* 04-A. 입고/검수 - 임시 저장 팝업 */}
+          <Route path="/receivingPopup" element={<ReceivingPopup />} />
+
+          {/* 04-A. 입고/검수 - 입력 */}
+          <Route path="/receivingInput" element={<ReceivingInput />} />
         </Routes>
       </Wrapper>
     </BrowserRouter>

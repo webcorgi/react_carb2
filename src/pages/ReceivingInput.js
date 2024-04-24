@@ -3,8 +3,8 @@ import icoCamera from '../img/ico_camera.svg'
 import imgCar from '../img/car_airview.png'
 import { useState } from 'react';
 
-function Receiving() {
-    const [inputDistance, setInputDistance] = useState(0);
+function ReceivingInput() {
+    const [inputDistance, setInputDistance] = useState('12,345');
 
     const onToLocaleString = (e) => {
         let value = e.target.value;
@@ -25,7 +25,7 @@ function Receiving() {
                         <img src={icoBack} alt="back" />
                         <span>입고/검수</span>
                     </div>
-                    <button>임시 저장</button>
+                    <button className='c_navy2'>수정하기</button>
                 </div>
                 <div className="btm">
                     <div className="inner">
@@ -70,22 +70,22 @@ function Receiving() {
                         <h3>타이어 교환 필요 여부</h3>
                         <div className="changeTire">
                             <label className='checklabel2'>
-                                <input type="checkbox" />
+                                <input type="checkbox" defaultChecked />
                                 <i></i>
                                 <span>앞-좌측 타이어</span>
                             </label>
                             <label className='checklabel2'>
-                                <input type="checkbox" />
+                                <input type="checkbox" defaultChecked />
                                 <i></i>
                                 <span>앞-좌측 타이어</span>
                             </label>
                             <label className='checklabel2'>
-                                <input type="checkbox" />
+                                <input type="checkbox" defaultChecked />
                                 <i></i>
                                 <span>앞-좌측 타이어</span>
                             </label>
                             <label className='checklabel2'>
-                                <input type="checkbox" />
+                                <input type="checkbox" defaultChecked />
                                 <i></i>
                                 <span>앞-좌측 타이어</span>
                             </label>
@@ -97,12 +97,12 @@ function Receiving() {
                         <h3>브레이크 패드 교환 여부</h3>
                         <div className="changePad">
                             <label className='checklabel2'>
-                                <input type="checkbox" />
+                                <input type="checkbox" defaultChecked />
                                 <i></i>
                                 <span>앞 패드</span>
                             </label>
                             <label className='checklabel2'>
-                                <input type="checkbox" />
+                                <input type="checkbox" defaultChecked />
                                 <i></i>
                                 <span>뒤 패드</span>
                             </label>
@@ -112,19 +112,19 @@ function Receiving() {
                     <div className="inner">
                         <h3>경고등 점등 상태</h3>
                         <p className='subtext'>(ex. 엔진 경고등, 타이어 공기압)</p>
-                        <input type="text" placeholder='텍스트 필드' className='inputstyle1' />
+                        <input type="text" placeholder='텍스트 필드' className='inputstyle1' value={'텍스트 필드'} />
 
                         <div className="h40"></div>
 
                         <h3>소모품 상태</h3>
                         <p className='subtext'>(ex. 엔진 오일 부족, 앞 타이어 교환 필요)</p>
-                        <input type="text" placeholder='텍스트 필드' className='inputstyle1' />
+                        <input type="text" placeholder='텍스트 필드' className='inputstyle1' value={'텍스트 필드'} />
 
                         <div className="h40"></div>
 
                         <h3>특이 사항</h3>
                         <p className='subtext'>(ex. 차량 외판 손상)</p>
-                        <input type="text" placeholder='텍스트 필드' className='inputstyle1' />
+                        <input type="text" placeholder='텍스트 필드' className='inputstyle1' value={'텍스트 필드'} />
 
                         <div className="h80"></div>
 
@@ -135,4 +135,4 @@ function Receiving() {
         </>
     )
 }
-export default Receiving;
+export default ReceivingInput;
