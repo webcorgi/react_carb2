@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_carb2/static/css/main.a3cf2134.css",
-    "main.js": "/react_carb2/static/js/main.99dee01f.js",
+    "main.js": "/react_carb2/static/js/main.da8368d4.js",
     "static/media/Pretendard-Bold.woff2": "/react_carb2/static/media/Pretendard-Bold.0676c8838a37a3b770d8.woff2",
     "static/media/Pretendard-Medium.woff2": "/react_carb2/static/media/Pretendard-Medium.ea235f1edb8815831a25.woff2",
     "static/media/Pretendard-Regular.woff2": "/react_carb2/static/media/Pretendard-Regular.6090e6b5524796768e78.woff2",
@@ -28,10 +28,10 @@
     "static/media/ico_back_white.svg": "/react_carb2/static/media/ico_back_white.a4bcef97bf24373312a8833285731cb3.svg",
     "static/media/arrow_right_blue.svg": "/react_carb2/static/media/arrow_right_blue.5880de1a51163d8a66257a68a1815cb7.svg",
     "main.a3cf2134.css.map": "/react_carb2/static/css/main.a3cf2134.css.map",
-    "main.99dee01f.js.map": "/react_carb2/static/js/main.99dee01f.js.map"
+    "main.da8368d4.js.map": "/react_carb2/static/js/main.da8368d4.js.map"
   },
   "entrypoints": [
     "static/css/main.a3cf2134.css",
-    "static/js/main.99dee01f.js"
+    "static/js/main.da8368d4.js"
   ]
 }
