@@ -3,6 +3,7 @@ import ArrowRightWhite from '../img/arrow_right_white.svg'
 import imgSuccess from '../img/img_success.png'
 import imgConfirm from '../img/ico_confirm.png'
 import imgBackWhite from '../img/ico_back_white.svg'
+import imgBackBlue from '../img/ico_back_blue.svg'
 import { Link } from 'react-router-dom'
 
 
@@ -53,11 +54,12 @@ function Proceeding() {
                 </div>
                 <div className='sidewrap'>
                     <Link to="" className="requestlist-top navy">
-                        <img src={imgBackWhite} alt="back" />
+                        <img src={imgBackWhite} alt="back" className='view_pc_only' />
+                        <img src={imgBackBlue} alt="back" className='view_mo_only' />
                         <span>진행 중인 리스트</span>
                     </Link>
                     <div className="requestlist-btm">
-                        <div className="requestlist">
+                        <div className="requestlist textDateMargin first">
                             <p className='text-date'>2024년 1월 2일</p>
                             <ul>
                                 <li>
@@ -108,7 +110,8 @@ function Proceeding() {
                                 <button className='btn-common default h40'>장비/출고</button>
                             </div>
                         </div>
-                        <div className="requestlist">
+                        <div className="requestlist textDateMargin">
+                            <p className='text-date'>2024년 1월 2일</p>
                             <ul>
                                 <li>
                                     <span>No.00001</span>

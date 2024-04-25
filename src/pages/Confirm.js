@@ -2,12 +2,11 @@ import icoCar from '../img/ico_car.png'
 import ArrowRightWhite from '../img/arrow_right_white.svg'
 import imgSuccess from '../img/img_success.png'
 import imgConfirm from '../img/ico_confirm.png'
-import imgBackWhite from '../img/ico_back_white.svg'
-import imgBackBlue from '../img/ico_back_blue.svg'
+import icoBack from '../img/ico_back_blue.svg'
+import icoFilter from '../img/ico_filter.svg'
 import { Link } from 'react-router-dom'
 
-
-function Request() {
+function Confirm() {
 
     return (
         <>
@@ -27,7 +26,7 @@ function Request() {
                             <img src={ArrowRightWhite} alt="arrow" />
                         </div>
                     </Link>
-                    <div className="flexbox">
+                    <Link to="" className="flexbox">
                         <div className="box-wait">
                             <h2>입고 대기</h2>
                             <div className="num">
@@ -40,108 +39,103 @@ function Request() {
                                 <strong>10</strong>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                     <div className="flexbox">
-                        <div className="box-confirm">
+                        <Link to="" className="box-confirm">
                             <h2>진행 완료</h2>
                             <img src={imgSuccess} alt="진행 완료" />
-                        </div>
-                        <div className="box-confirm">
+                        </Link>
+                        <Link to="" className="box-confirm">
                             <h2>정산 확인</h2>
                             <img src={imgConfirm} alt="정산 확인" />
-                        </div>
+                        </Link>
                     </div>
                 </div>
-                <div className='sidewrap'>
+                <div className='sidewrap processEnd'>
                     <Link to="" className="requestlist-top">
-                        <img src={imgBackWhite} alt="back" className='view_pc_only' />
-                        <img src={imgBackBlue} alt="back" className='view_mo_only' />
-                        <span>고객사 입고 요청 리스트</span>
+                        <img src={icoBack} alt="back" />
+                        <span>정산 확인</span>
                     </Link>
                     <div className="requestlist-btm">
                         <div className="requestlist">
                             <ul>
                                 <li>
-                                    <span>No.00001</span>
+                                    <span className='date-confirm'>2024년 4월</span>
                                     <b></b>
                                 </li>
                                 <li>
-                                    <span>입고 날짜</span>
-                                    <b>2024.01.02</b>
+                                    <span>완료 건수</span>
+                                    <b>10건</b>
                                 </li>
                                 <li>
-                                    <span>차량 정보</span>
-                                    <b>SM3 · 01다 1234</b>
-                                </li>
-                                <li>
-                                    <span>정비 유형</span>
-                                    <b>일반 정비</b>
+                                    <span>정산 금액</span>
+                                    <b>150,000원</b>
                                 </li>
                             </ul>
-                            <button className='btn-common h40'>요청 확인하기</button>
                         </div>
                         <div className="requestlist">
                             <ul>
                                 <li>
-                                    <span>No.00001</span>
+                                    <span className='date-confirm'>2024년 4월</span>
                                     <b></b>
                                 </li>
                                 <li>
-                                    <span>입고 날짜</span>
-                                    <b>2024.01.02</b>
+                                    <span>완료 건수</span>
+                                    <b>10건</b>
                                 </li>
                                 <li>
-                                    <span>차량 정보</span>
-                                    <b>SM3 · 01다 1234</b>
-                                </li>
-                                <li>
-                                    <span>정비 유형</span>
-                                    <b>일반 정비</b>
+                                    <span>정산 금액</span>
+                                    <b>150,000원</b>
                                 </li>
                             </ul>
-                            <button className='btn-common h40'>요청 확인하기</button>
                         </div>
                         <div className="requestlist">
                             <ul>
                                 <li>
-                                    <span>No.00001</span>
+                                    <span className='date-confirm'>2024년 4월</span>
                                     <b></b>
                                 </li>
                                 <li>
-                                    <span>입고 날짜</span>
-                                    <b>2024.01.02</b>
+                                    <span>완료 건수</span>
+                                    <b>10건</b>
                                 </li>
                                 <li>
-                                    <span>차량 정보</span>
-                                    <b>SM3 · 01다 1234</b>
-                                </li>
-                                <li>
-                                    <span>정비 유형</span>
-                                    <b>일반 정비</b>
+                                    <span>정산 금액</span>
+                                    <b>150,000원</b>
                                 </li>
                             </ul>
-                            <button className='btn-common h40'>요청 확인하기</button>
                         </div>
                         <div className="requestlist">
                             <ul>
                                 <li>
-                                    <span>No.00001</span>
+                                    <span className='date-confirm'>2024년 4월</span>
                                     <b></b>
                                 </li>
                                 <li>
-                                    <span>입고 날짜</span>
-                                    <b>2024.01.02</b>
+                                    <span>완료 건수</span>
+                                    <b>10건</b>
                                 </li>
                                 <li>
-                                    <span>차량 정보</span>
-                                    <b>SM3 · 01다 1234</b>
-                                </li>
-                                <li>
-                                    <span>정비 유형</span>
-                                    <b>일반 정비</b>
+                                    <span>정산 금액</span>
+                                    <b>150,000원</b>
                                 </li>
                             </ul>
-                            <button className='btn-common h40'>요청 확인하기</button>
+                        </div>
+                        <div className="requestlist">
+                            <ul>
+                                <li>
+                                    <span className='date-confirm'>2024년 4월</span>
+                                    <b></b>
+                                </li>
+                                <li>
+                                    <span>완료 건수</span>
+                                    <b>10건</b>
+                                </li>
+                                <li>
+                                    <span>정산 금액</span>
+                                    <b>150,000원</b>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -149,4 +143,4 @@ function Request() {
         </>
     )
 }
-export default Request;
+export default Confirm;

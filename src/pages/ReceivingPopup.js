@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import icoClose from '../img/ico_close_blue.svg'
 
 function ReceivingPopup() {
-    const [inputDistance, setInputDistance] = useState(0);
 
     return (
         <>

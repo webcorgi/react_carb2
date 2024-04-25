@@ -2,6 +2,7 @@ import icoBack from '../img/ico_back_blue.svg'
 import icoCamera from '../img/ico_camera.svg'
 import imgCar from '../img/car_airview.png'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Receiving() {
     const [inputDistance, setInputDistance] = useState(0);
@@ -21,16 +22,32 @@ function Receiving() {
         <>
             <div className="box-receiving">
                 <div className="top">
-                    <div>
+                    <Link to="">
                         <img src={icoBack} alt="back" />
                         <span>입고/검수</span>
-                    </div>
+                    </Link>
                     <button>임시 저장</button>
                 </div>
                 <div className="btm">
                     <div className="inner">
                         <h3>입고 사진 업로드</h3>
                         <div className="uploadbox">
+                            <label className='filelabel'>
+                                <input type="file" />
+                                <img src={icoCamera} alt="camera" />
+                            </label>
+                            <label className='filelabel'>
+                                <input type="file" />
+                                <img src={icoCamera} alt="camera" />
+                            </label>
+                            <label className='filelabel'>
+                                <input type="file" />
+                                <img src={icoCamera} alt="camera" />
+                            </label>
+                            <label className='filelabel'>
+                                <input type="file" />
+                                <img src={icoCamera} alt="camera" />
+                            </label>
                             <label className='filelabel'>
                                 <input type="file" />
                                 <img src={icoCamera} alt="camera" />

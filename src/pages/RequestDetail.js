@@ -6,6 +6,7 @@ import icoBack from '../img/ico_back_blue.svg'
 import { Link } from 'react-router-dom'
 
 
+
 function RequestDetail() {
 
     return (
@@ -53,37 +54,39 @@ function RequestDetail() {
                 </div>
                 <div className='sidewrap'>
                     <div className="box-requestdetail">
-                        <div className="top">
+                        <Link to="" className="top">
                             <img src={icoBack} alt="back" />
                             <span>입고 요청 상세</span>
-                        </div>
-                        <ul className="list">
-                            <li>
-                                <span>입고 날짜</span>
-                                <b>2024.01.02</b>
-                            </li>
-                            <li>
-                                <span>차량 정보</span>
-                                <b>SM · 01다 1234</b>
-                            </li>
-                            <li>
-                                <span>요청 사항</span>
-                                <b>
-                                    엔진 오일 교환<br />
-                                    타이어 점검
-                                </b>
-                            </li>
-                            <li>
-                                <span>정비 이력</span>
-                                <b>
-                                    2023.10.10・엔진오일 교환 / 25,000km<br />
-                                    2023.10.10・엔진오일 교환 / 25,000km
-                                </b>
-                            </li>
-                        </ul>
-                        <div className="flexbox btn">
-                            <button className='btn-common'>수락</button>
-                            <button className='btn-common reverse'>불가</button>
+                        </Link>
+                        <div className="inner-mo-scroll">
+                            <ul className="list">
+                                <li>
+                                    <span>입고 날짜</span>
+                                    <b>2024.01.02</b>
+                                </li>
+                                <li>
+                                    <span>차량 정보</span>
+                                    <b>SM · 01다 1234</b>
+                                </li>
+                                <li>
+                                    <span>요청 사항</span>
+                                    <b>
+                                        엔진 오일 교환<br />
+                                        타이어 점검
+                                    </b>
+                                </li>
+                                <li>
+                                    <span>정비 이력</span>
+                                    <b>
+                                        2023.10.10・엔진오일 교환 / 25,000km<br />
+                                        2023.10.10・엔진오일 교환 / 25,000km
+                                    </b>
+                                </li>
+                            </ul>
+                            <div className="flexbox btn">
+                                <button className='btn-common'>수락</button>
+                                <button className='btn-common reverse'>불가</button>
+                            </div>
                         </div>
                     </div>
                 </div>

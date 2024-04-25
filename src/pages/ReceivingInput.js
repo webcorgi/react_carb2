@@ -2,6 +2,7 @@ import icoBack from '../img/ico_back_blue.svg'
 import icoCamera from '../img/ico_camera.svg'
 import imgCar from '../img/car_airview.png'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function ReceivingInput() {
     const [inputDistance, setInputDistance] = useState('12,345');
@@ -21,10 +22,10 @@ function ReceivingInput() {
         <>
             <div className="box-receiving">
                 <div className="top">
-                    <div>
+                    <Link to="">
                         <img src={icoBack} alt="back" />
                         <span>입고/검수</span>
-                    </div>
+                    </Link>
                     <button className='c_navy2'>수정하기</button>
                 </div>
                 <div className="btm">
