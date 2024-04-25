@@ -35,52 +35,52 @@ function App() {
       <Wrapper>
         <Routes>
           {/* 전체 작업 리스트 */}
-          <Route path="/list" element={<List />} />
+          <Route path="/react_carb2/list" element={<List />} />
 
           {/* 00.온보딩 */}
-          <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="/react_carb2/onboarding" element={<Onboarding />} />
 
           {/* 00.로그인, 00.로그인-활성화, 00.로그인-미입력 */}
-          <Route path="/login" element={<Login />} exact />
+          <Route path="/react_carb2/login" element={<Login />} exact />
 
           {/* 02. 서비스 메인 */}
-          <Route path="/main" element={<Main />} />
+          <Route path="/react_carb2/main" element={<Main />} />
 
           {/* 03. 입고 요청 */}
-          <Route path="/request" element={<Request />} />
+          <Route path="/react_carb2/request" element={<Request />} />
 
           {/* 03-A. 입고 요청 상세 */}
-          <Route path="/requestDetail" element={<RequestDetail />} />
+          <Route path="/react_carb2/requestDetail" element={<RequestDetail />} />
 
           {/* 04. 진행중 */}
-          <Route path="/proceeding" element={<Proceeding />} />
+          <Route path="/react_carb2/proceeding" element={<Proceeding />} />
 
           {/* 04-A. 입고/검수 */}
-          <Route path="/receiving" element={<Receiving />} />
+          <Route path="/react_carb2/receiving" element={<Receiving />} />
 
           {/* 04-A. 입고/검수 - 입력 */}
-          <Route path="/receivingInput" element={<ReceivingInput />} />
+          <Route path="/react_carb2/receivingInput" element={<ReceivingInput />} />
 
           {/* 04-A. 입고/검수 - 임시 저장 팝업 */}
-          <Route path="/receivingPopup" element={<ReceivingPopup />} />
+          <Route path="/react_carb2/receivingPopup" element={<ReceivingPopup />} />
 
           {/* 04-A. 입고/검수 - 사진 업로드 팝업 */}
-          <Route path="/receivingPopupUpload" element={<ReceivingPopupUpload />} />
+          <Route path="/react_carb2/receivingPopupUpload" element={<ReceivingPopupUpload />} />
 
           {/* 04-A. 정비/출고 - 견적서 업로드  */}
-          <Route path="/maintenance" element={<Maintenance />} />
+          <Route path="/react_carb2/maintenance" element={<Maintenance />} />
 
           {/* 04-A. 정비/출고 - 정비 예상 시간  */}
-          <Route path="/maintenanceTime" element={<MaintenanceTime />} />
+          <Route path="/react_carb2/maintenanceTime" element={<MaintenanceTime />} />
 
           {/* 04-A. 정비/출고 - 출고 요청  */}
-          <Route path="/maintenanceShipment" element={<MaintenanceShipment />} />
+          <Route path="/react_carb2/maintenanceShipment" element={<MaintenanceShipment />} />
 
           {/* 05. 진행 완료  */}
-          <Route path="/processEnd" element={<ProcessEnd />} />
+          <Route path="/react_carb2/processEnd" element={<ProcessEnd />} />
 
           {/* 06. 정산 확인 */}
-          <Route path="/confirm" element={<Confirm />} />
+          <Route path="/react_carb2/confirm" element={<Confirm />} />
         </Routes>
       </Wrapper>
     </BrowserRouter>
